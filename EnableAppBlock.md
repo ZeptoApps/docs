@@ -40,5 +40,7 @@ If you want to enable App Block for a theme, you must have a JSON file under `te
 }
 ```
 
+N.B: If you have any file like `index.liquid`, remove that and create a new one `index.json`
+
 Hope it will work. 
 
