@@ -12,23 +12,23 @@ This below script will change the text of all of the Personalization Buttons in 
 ```js
 <script type="text/javascript">
 
-    // Listen for the pplrAppInitiated custom event
-lizeButtonTextChange    window.addEventListener('pplrAppInitiated' , function(e) {
+// Listen for the pplrAppInitiated custom event
 
-	  // bulk edit customize button text
-	  function cutomizeButtonText(text){
-		// The text you want to show on all personalization button
-        let value = text;
+window.addEventListener("pplrAppInitiated", function (e) {
 
-        let btn = document.querySelector(".pplr-c-button");
+  function cutomizeButtonText(text) {
 
-        btn.textContent = value;
-      };
+    // The text you want to show on all personalization button
+    let value = text;
 
+    let btn = document.querySelector(".pplr-c-button");
 
-      // Call the function and pass the value
-      cutomizeButtonText("Your Text");
-    });
+    btn.textContent = value;
+  }
+
+  // Call the function and pass the value
+  cutomizeButtonText("Your Text");
+});
 
   </script>
 ```
