@@ -1,3 +1,8 @@
+---
+layout: default
+title: Globally change personalizer button text
+---
+
 In our app we can't change the text of the "Personalization" button for all products globally. If a client want to change them they need to change it one product at a time.
 This below script will change the text of all of the Personalization Buttons in a store. Add this script in the theme.liquid file so this will apply to all products.
 
@@ -11,25 +16,18 @@ This below script will change the text of all of the Personalization Buttons in 
 
 ```js
 <script type="text/javascript">
-
-    // Listen for the pplrAppInitiated custom event
-lizeButtonTextChange    window.addEventListener('pplrAppInitiated' , function(e) {
-
-	  // bulk edit customize button text
-	  function cutomizeButtonText(text){
-		// The text you want to show on all personalization button
-        let value = text;
-
-        let btn = document.querySelector(".pplr-c-button");
-
-        btn.textContent = value;
-      };
-
-
-      // Call the function and pass the value
-      cutomizeButtonText("Your Text");
-    });
-
+// Listen for the pplrAppInitiated custom event
+window.addEventListener('pplrAppInitiated' , function(e) {
+  // bulk edit customize button text
+  function cutomizeButtonText(text){
+  // The text you want to show on all personalization button
+      let value = text;
+      let btn = document.querySelector(".pplr-c-button");
+      btn.textContent = value;
+    };
+    // Call the function and pass the value
+    cutomizeButtonText("Your Text");
+  });
   </script>
 ```
 

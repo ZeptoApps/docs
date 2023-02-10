@@ -1,3 +1,9 @@
+---
+layout: default
+title: Minimog Theme
+parent: Hide Products
+---
+
 Many of our client using "Minimog" theme where our hidden products are visible in the product recommendation section.
 This theme uses custom JS to generate the product recommendation, so we can not use our liquid code inside the loop.
 
