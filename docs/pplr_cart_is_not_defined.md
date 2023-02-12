@@ -12,7 +12,7 @@ pplr_manual_theme_selector is not defiend
 
 Then check, 
 1. Is script loaded?
-2. Does the below variables are declared or not.
+2. Does the below variables are declared or not?
 ```
 var pplr_cart = 
 var pplr_shop_currency = 
@@ -21,5 +21,5 @@ var pplr_money_formate =
 var pplr_manual_theme_selector
 ```
 
-Solution:
+Possible Solution:
 Give auto install for that store.
