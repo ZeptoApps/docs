@@ -9,7 +9,7 @@ Often we get complains from our customer that the add to cart is stucked at cert
 
 We need to check few things to investigate this specific issue.
 
-### Output format issue:
+## Output format issue:
 
 Open your browser console and check if there is any error while adding to cart. If the error is coming from our apps **canvas script** and realted to **PDF** or **FONT**, then the most possible reason is client using **"PDF Vector"** or **"SVG Vector"** as **"Output format"**. And the configuration have any custom font that have renderring issue with HTML5 Canvas.
 
@@ -17,7 +17,7 @@ If any fonts that have rendering issue with HTML CANVAS can interrupt the PDF Bu
 
 So first check by changing the **output format** to "PNG" and see if the issue get solved.
 
-### Interrupted by other app scripts:
+## Interrupted by other app scripts:
 
 If the Client is using **PNG** as the **output format** and facing this issue, then the possible reason is some other app scripts interrupting our add to cart flow.
 
